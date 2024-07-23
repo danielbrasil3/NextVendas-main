@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextVendas Produtos</title>
+    <!-- Inclusão do Bootstrap e arquivo CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styleprodutos.css" />
+  </head>
+  <body>
+    <!-- Container principal -->
+    <div class="container-fluid">
+      <div class="row p-4">
+        <!-- Menu lateral -->
+        <aside class="col-md-3 col-lg-2 p-0 rounded-2">
+          <nav>
+            <div class="sidebar">
+              <!-- Logo -->
+              <div class="logo m-3 text-center">
+                <h1>NextVendas</h1>
+              </div>
+              <!-- Itens do Menu -->
+              <ul class="nav flex-column m-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="../index.html"
+                  >
+                    <ion-icon
+                      class="icon me-2 rounded-2 p-2"
+                      name="home"
+                    ></ion-icon>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center active"
+                    href="./servidores.html"
+                  >
+                    <ion-icon
+                      class="icon me-2 rounded-2 p-2"
+                      name="stats-chart"
+                    ></ion-icon>
+                    Servidores
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="./historico.html"
+                  >
+                    <ion-icon
+                      class="icon me-2 rounded-2 p-2"
+                      name="receipt"
+                    ></ion-icon>
+                    Histórico
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="./layouts.html"
+                  >
+                    <ion-icon
+                      class="icon me-2 rounded-2 p-2"
+                      name="bag-handle"
+                    ></ion-icon>
+                    Layouts
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="#pagamento"
+                  >
+                    <ion-icon
+                      class="icon me-2 rounded-2 p-2"
+                      name="qr-code-sharp"
+                    ></ion-icon>
+                    Pagamento
+                  </a>
+                </li>
+                <h3 class="my-3">Chaves</h3>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="#perfil"
+                  >
+                    <ion-icon
+                      class="icon me-2 rounded-2 p-2"
+                      name="person"
+                    ></ion-icon>
+                    Perfil
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="#sair"
+                  >
+                    <ion-icon
+                      class="icon me-2 rounded-2 p-2"
+                      name="power"
+                    ></ion-icon>
+                    Sair
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="col-md-9 col-lg-10">
+          <!-- Nome do servidor -->
+          <header>
+            <div class="topo d-flex align-items-center pb-4">
+              <div class="circulo rounded-circle ms-4"></div>
+              <h1 class="ms-4">Servidor 1</h1>
+            </div>
+            <!-- Botão de voltar -->
+            <div>
+              <a class="voltar m-2 d-flex" href="./servidores.html">
+                <ion-icon class="icon px-2" name="arrow-undo"></ion-icon> Voltar
+              </a>
+            </div>
+          </header>
+
+          <!-- Tabela de produtos -->
+          <section>
+            <div class="card ms-4 my-4 p-4">
+              <div id="card-container" class="">
+                <div class="col">
+                  <h1 class="card-title text-center">Shop Name</h1>
+                  <div class="produtos table-responsive">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th scope="col">Codigo</th>
+                          <th scope="col">Nome</th>
+                          <th scope="col">Preço</th>
+                          <th scope="col">Estoque</th>
+                          <th scope="col">Descrição</th>
+                          <th scope="col">Ações</th>
+                        </tr>
+                      </thead>
+                      <tbody id="product-list"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botões de adicionar produto/escolher outro layout -->
+              <div
+                class="col-12 d-flex align-items-center justify-content-center"
+              >
+                <button
+                  id="button"
+                  onclick="openForm('add')"
+                  class="btn rounded-2 p-2 px-4 my-2 mx-4 d-flex justify-content-center"
+                >
+                  Adicionar Novo Produto
+                </button>
+                <a
+                  class="btn escolher-layout rounded-2 p-2 px-4 my-2 mx-4 d-flex justify-content-center"
+                  href="./layouts.html"
+                  >Escolher Outro Layout</a
+                >
+              </div>
+
+              <!-- Formulário de edição/adicionar produto -->
+              <div class="discord-card p-3 rounded-2" id="discord-card">
+                <div class="row">
+                  <h2 class="col-10">Informações do produto:</h2>
+                  <button
+                    class="col btn p-2 d-flex align-content-center justify-content-center"
+                    onclick="closeForm()"
+                  >
+                    <ion-icon
+                      id="close-form"
+                      name="close-circle-sharp"
+                    ></ion-icon>
+                  </button>
+                  <div class="col-6 flex-column">
+                    <input type="hidden" id="product-index" />
+                    <p>
+                      <b>📌 | Nome:</b>
+                      <input
+                        type="text"
+                        class="my-2 p-2 rounded-2"
+                        id="card-nome"
+                        placeholder="Nome"
+                      />
+                    </p>
+                    <p>
+                      <b>📝 | Descrição:</b>
+                      <input
+                        type="text"
+                        class="my-2 p-2 rounded-2"
+                        id="card-descricao"
+                        placeholder="Descrição"
+                      />
+                    </p>
+                    <p>
+                      <b>📦 | Estoque:</b>
+                      <input
+                        type="number"
+                        class="my-2 p-2 rounded-2"
+                        id="card-estoque"
+                        placeholder="Estoque"
+                      />
+                    </p>
+                    <p>
+                      <b>💸 | Preço:</b>
+                      <input
+                        type="text"
+                        class="my-2 p-2 rounded-2"
+                        id="card-preco"
+                        placeholder="Preço"
+                      />
+                    </p>
+                    <p id="codigo"></p>
+                  </div>
+                  <!-- Container da imagem do produto -->
+                  <div class="image-container col-6 p-2">
+                    <img
+                      class="card-image p-4 rounded-2"
+                      id="card-image"
+                      src=""
+                      alt="Imagem do produto"
+                    />
+                    <button
+                      class="change-image-button py-2 px-3 rounded-1"
+                      onclick="document.getElementById('fileInput').click()"
+                    >
+                      Trocar Imagem
+                    </button>
+                    <input
+                      type="file"
+                      id="fileInput"
+                      style="display: none"
+                      accept="image/*"
+                      onchange="changeImage(event)"
+                    />
+                  </div>
+                </div>
+                <div id="error-message" class="error-message mt-1"></div>
+                <button class="save-btn p-2 rounded-3" onclick="saveProduct()">
+                  Salvar
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Scripts necessários-->
+    <script src="../js/produtos.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
