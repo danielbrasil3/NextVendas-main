@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", carregarCardsIniciais)
 
 async function carregarCardsIniciais() {
   try {
-    const response = await fetch("../data/produtos.json")
+    const response = await fetch("../data/layouts.json")
     const data = await response.json()
     for (let key in data["Banco-de-dados"]) {
       const loja = data["Banco-de-dados"][key]
@@ -17,7 +17,7 @@ async function carregarCardsIniciais() {
 
 async function adicionarCard(produtos = null, shopName = "SHOP NAME") {
   let cardHtml = `
-                <div class="col-md-4 mb-4">
+                <div class="col-md-6 col-xl-4 mb-4">
                     <div class="card px-2 py-1">
                         <h1 class="card-title text-center">${shopName}</h1>
                         <div class="produtos table-responsive">
@@ -61,7 +61,7 @@ async function adicionarCard(produtos = null, shopName = "SHOP NAME") {
                                   </tbody>
                             </table>
                         </div>
-                        <div class="text-center d-flex">
+                        <div class="d-flex align-items-center justify-content-center">
                             <a class="btn btn-custom-escolher py-2 px-2 mb-2 mx-3 rounded-2" href="./produtos.html">Escolher Layout</a>
                             <a class="btn btn-custom-alterar py-2 px-2 mb-2 mx-3 rounded-2" href="./alt-lay.html">Alterar Layout</a>
                         </div>
@@ -76,7 +76,7 @@ async function adicionarCard(produtos = null, shopName = "SHOP NAME") {
 
 async function adicionarCardNovoLayout() {
   try {
-    const response = await fetch("../data/produtos.json")
+    const response = await fetch("../data/layouts.json")
     const data = await response.json()
     const produtos = data["Novo-layout"]["produtos"]
     const shopName = data["Novo-layout"]["shop-name"]

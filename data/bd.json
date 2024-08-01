@@ -1,0 +1,189 @@
+{
+    "products": [
+        {
+            "codigo": 1,
+            "nome": "Produto A1",
+            "preco": "R$19,99",
+            "estoque": 10,
+            "descricao": "teste",
+            "imagem": "https://m.media-amazon.com/images/I/51rttY7a+9L.png"
+        },
+        {
+            "codigo": 2,
+            "nome": "Produto B2",
+            "preco": "R$29,99",
+            "estoque": 15,
+            "descricao": "teste teste",
+            "imagem": "https://via.placeholder.com/300"
+        },
+        {
+            "codigo": 3,
+            "nome": "Produto C3",
+            "preco": "R$39,99",
+            "estoque": 20,
+            "descricao": "teste teste teste",
+            "imagem": "https://via.placeholder.com/50"
+        }
+    ],
+
+    "salesData": [
+        {
+            "nome": "João Silva",
+            "servidor": "Servidor 1",
+            "produto": "Produto A",
+            "valor": "R$ 100,00",
+            "idPedido": "12345"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Pedro Santos",
+            "servidor": "Servidor 3",
+            "produto": "Produto C",
+            "valor": "R$ 300,00",
+            "idPedido": "12347"
+        },
+        {
+            "nome": "João Silva",
+            "servidor": "Servidor 1",
+            "produto": "Produto A",
+            "valor": "R$ 100,00",
+            "idPedido": "12345"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Pedro Santos",
+            "servidor": "Servidor 3",
+            "produto": "Produto C",
+            "valor": "R$ 300,00",
+            "idPedido": "12347"
+        },
+        {
+            "nome": "João Silva",
+            "servidor": "Servidor 1",
+            "produto": "Produto A",
+            "valor": "R$ 100,00",
+            "idPedido": "12345"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "João Silva",
+            "servidor": "Servidor 1",
+            "produto": "Produto A",
+            "valor": "R$ 100,00",
+            "idPedido": "12345"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Pedro Santos",
+            "servidor": "Servidor 3",
+            "produto": "Produto C",
+            "valor": "R$ 300,00",
+            "idPedido": "12347"
+        },
+        {
+            "nome": "João Silva",
+            "servidor": "Servidor 1",
+            "produto": "Produto A",
+            "valor": "R$ 100,00",
+            "idPedido": "12345"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Pedro Santos",
+            "servidor": "Servidor 3",
+            "produto": "Produto C",
+            "valor": "R$ 300,00",
+            "idPedido": "12347"
+        },
+        {
+            "nome": "João Silva",
+            "servidor": "Servidor 1",
+            "produto": "Produto A",
+            "valor": "R$ 100,00",
+            "idPedido": "12345"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        },
+        {
+            "nome": "Maria Oliveira",
+            "servidor": "Servidor 2",
+            "produto": "Produto B",
+            "valor": "R$ 200,00",
+            "idPedido": "12346"
+        }
+    ],
+
+    "channelNotification": {
+        
+    }
+}

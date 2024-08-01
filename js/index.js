@@ -2,7 +2,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const ctx = document.getElementById('teste').getContext('2d');
+    const ctx = document.getElementById('grafico').getContext('2d');
     const customLineChart = new Chart(ctx, {
         type: 'line',
         data: {

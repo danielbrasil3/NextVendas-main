@@ -16,121 +16,108 @@
   </head>
   <body>
     <!-- Container principal -->
-    <div class="container-fluid">
+    <div class="container-fluid w-100">
       <div class="row p-4">
-        <!-- Menu lateral -->
-        <aside class="col-md-3 col-lg-2 p-0 rounded-2">
-          <nav>
-            <div class="sidebar">
-              <!-- Logo -->
-              <div class="logo m-3 text-center">
-                <h1>NextVendas</h1>
-              </div>
-              <!-- Itens do Menu -->
-              <ul class="nav flex-column m-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="../index.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="home"
-                    ></ion-icon>
-                    Dashboard
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center active"
-                    href="./servidores.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="stats-chart"
-                    ></ion-icon>
-                    Servidores
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="./historico.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="receipt"
-                    ></ion-icon>
-                    Histórico
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="./layouts.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="bag-handle"
-                    ></ion-icon>
-                    Layouts
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#pagamento"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="qr-code-sharp"
-                    ></ion-icon>
-                    Pagamento
-                  </a>
-                </li>
-                <h3 class="my-3">Chaves</h3>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#perfil"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="person"
-                    ></ion-icon>
-                    Perfil
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#sair"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="power"
-                    ></ion-icon>
-                    Sair
-                  </a>
-                </li>
-              </ul>
+          <!-- Navbar for mobile view -->
+        <nav class="navbar navbar-dark d-xl-none">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">NextVendas</a>
+            <ul class="d-flex align-items-center m-0 p-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                  <ion-icon name="home"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./html/servidores.html">
+                  <ion-icon name="stats-chart"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/historico.html">
+                  <ion-icon name="receipt"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/layouts.html">
+                  <ion-icon name="bag-handle"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pagamento">
+                  <ion-icon name="qr-code-sharp"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#perfil">
+                  <ion-icon name="person-circle"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Sidebar -->
+        <aside class="col-xl-2 p-0 rounded-2">
+          <nav class="sidebar collapse d-xl-block" id="sidebarMenu">
+            <!-- Logo -->
+            <div class="logo m-3 text-center">
+              <h1>NextVendas</h1>
             </div>
+            <!-- Menu Items -->
+            <ul class="nav flex-column m-xl-3">
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../index.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="home"></ion-icon>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center active" href="../html/servidores.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="stats-chart"></ion-icon>
+                  Servidores
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../html/historico.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="receipt"></ion-icon>
+                  Histórico
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../html/layouts.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="bag-handle"></ion-icon>
+                  Layouts
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="#pagamento">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="qr-code-sharp"></ion-icon>
+                  Pagamento
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="#perfil">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="person"></ion-icon>
+                  Perfil
+                </a>
+              </li>
+            </ul>
           </nav>
         </aside>
 
         <!-- Conteúdo principal -->
-        <main class="col-md-9 col-lg-10">
+        <main class="col-xl-10">
 
           <!-- Cabeçalho -->
-          <header class="topo d-flex flex-column justify-content-evenly py-2">
-            <h1 class="ms-4">Selecione o servidor:</h1>
+          <header class="topo d-flex align-items-center p-0 my-3 pb-xl-4 m-xl-0">
+            <h1 class="m-0 ms-xl-4">Selecione o servidor:</h1>
           </header>
-          <section class="card d-flex justify-content-space-between ms-4 p-2">
+          <section class="card d-flex justify-content-space-between ms-xl-4 p-2">
             <!-- Lista de servidores -->
             <div class="row">
               <div
                 id="servidor1"
-                class="col-2 d-flex flex-column align-items-center my-2"
+                class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center my-2"
               >
                 <span>Servidor 1</span>
                 <a class="circulo rounded-circle" href="produtos.html"></a>
@@ -138,7 +125,7 @@
               </div>
               <div
                 id="servidor2"
-                class="col-2 d-flex flex-column align-items-center my-2"
+                class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center my-2"
               >
                 <span>Servidor 1</span>
                 <a class="circulo rounded-circle" href="produtos.html"></a>
@@ -146,7 +133,7 @@
               </div>
               <div
                 id="servidor3"
-                class="col-2 d-flex flex-column align-items-center my-2"
+                class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center my-2"
               >
                 <span>Servidor 1</span>
                 <a class="circulo rounded-circle" href="produtos.html"></a>
@@ -154,7 +141,7 @@
               </div>
               <div
                 id="servidor4"
-                class="col-2 d-flex flex-column align-items-center my-2"
+                class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center my-2"
               >
                 <span>Servidor 1</span>
                 <a class="circulo rounded-circle" href="produtos.html"></a>
@@ -162,7 +149,7 @@
               </div>
               <div
                 id="servidor5"
-                class="col-2 d-flex flex-column align-items-center my-2"
+                class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center my-2"
               >
                 <span>Servidor 1</span>
                 <a class="circulo rounded-circle" href="produtos.html"></a>
@@ -170,7 +157,7 @@
               </div>
               <div
                 id="servidor5"
-                class="col-2 d-flex flex-column align-items-center my-2"
+                class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center my-2"
               >
                 <span>Servidor 1</span>
                 <a class="circulo rounded-circle" href="produtos.html"></a>
@@ -178,7 +165,7 @@
               </div>
               <div
                 id="servidor5"
-                class="col-2 d-flex flex-column align-items-center my-2"
+                class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center my-2"
               >
                 <span>Servidor 1</span>
                 <a class="circulo rounded-circle" href="produtos.html"></a>
@@ -190,7 +177,7 @@
               >
                 <a
                   id="button"
-                  class="col-3 rounded-2 p-2 my-2 d-flex justify-content-center"
+                  class="col-6 col-md-5 col-lg-4 col-xl-3 rounded-2 p-2 my-2 d-flex justify-content-center"
                   href="#"
                   >Me adicione</a
                 >

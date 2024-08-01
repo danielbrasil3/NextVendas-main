@@ -15,134 +15,121 @@
   </head>
   <body>
     <!-- Container principal -->
-    <div class="container-fluid">
+    <div class="container-fluid w-100">
       <div class="row p-4">
-        <!-- Menu lateral -->
-        <aside class="col-md-3 col-lg-2 p-0 rounded-2">
-          <nav>
-            <div class="sidebar">
-              <!-- Logo -->
-              <div class="logo m-3 text-center">
-                <h1>NextVendas</h1>
-              </div>
-              <!-- Itens do Menu -->
-              <ul class="nav flex-column m-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center active"
-                    href="../index.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="home"
-                    ></ion-icon>
-                    Dashboard
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="./html/servidores.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="stats-chart"
-                    ></ion-icon>
-                    Servidores
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="../html/historico.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="receipt"
-                    ></ion-icon>
-                    Histórico
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="./html/layouts.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="bag-handle"
-                    ></ion-icon>
-                    Layouts
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#pagamento"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="qr-code-sharp"
-                    ></ion-icon>
-                    Pagamento
-                  </a>
-                </li>
-                <h3 class="my-3">Chaves</h3>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#perfil"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="person"
-                    ></ion-icon>
-                    Perfil
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#sair"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="power"
-                    ></ion-icon>
-                    Sair
-                  </a>
-                </li>
-              </ul>
+          <!-- Navbar for mobile view -->
+        <nav class="navbar navbar-dark d-xl-none">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">NextVendas</a>
+            <ul class="d-flex align-items-center m-0 p-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">
+                  <ion-icon name="home"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/servidores.html">
+                  <ion-icon name="stats-chart"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/historico.html">
+                  <ion-icon name="receipt"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/layouts.html">
+                  <ion-icon name="bag-handle"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pagamento">
+                  <ion-icon name="qr-code-sharp"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#perfil">
+                  <ion-icon name="person-circle"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Sidebar -->
+        <aside class="col-xl-2 p-0 rounded-2">
+          <nav class="sidebar collapse d-xl-block" id="sidebarMenu">
+            <!-- Logo -->
+            <div class="logo m-3 text-center">
+              <h1>NextVendas</h1>
             </div>
+            <!-- Menu Items -->
+            <ul class="nav flex-column m-xl-3">
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center active" href="../index.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="home"></ion-icon>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../html/servidores.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="stats-chart"></ion-icon>
+                  Servidores
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../html/historico.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="receipt"></ion-icon>
+                  Histórico
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../html/layouts.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="bag-handle"></ion-icon>
+                  Layouts
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="#pagamento">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="qr-code-sharp"></ion-icon>
+                  Pagamento
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="#perfil">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="person"></ion-icon>
+                  Perfil
+                </a>
+              </li>
+            </ul>
           </nav>
         </aside>
 
         <!-- Conteúdo principal -->
-        <main class="col-md-9 col-lg-10">
+        <main class="col-xl-10">
           <!-- Cabeçalho -->
-          <header class="topo d-flex align-items-center pb-4">
-            <div class="circulo rounded-circle ms-4"></div>
+          <header class="topo d-flex align-items-center p-0 my-4 pb-xl-4 m-xl-0">
+            <div class="circulo rounded-circle ms-xl-4"></div>
             <h1 class="ms-4">Olá, Not-Daniel</h1>
           </header>
           
           <!-- Cards -->
-          <section class="cards ps-4">
+          <section class="cards ps-xl-4">
             <div class="row">
-              <div class="col-md-4 mb-3">
+              <div class="col-xl-4 mb-3">
                 <div class="card p-3">
                   <h5>Vendas Hoje</h5>
                   <h3>$53,897</h3>
                   <p><span>+3.48% </span>Desde ontem</p>
                 </div>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-xl-4 mb-3">
                 <div class="card p-3">
                   <h5>Quantidade de Clientes</h5>
                   <h3>1000</h3>
                   <p><span>+3.48% </span>Desde o último mês</p>
                 </div>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-xl-4 mb-3">
                 <div class="card p-3">
                   <h5>Total vendido</h5>
                   <h3>$53,897</h3>
@@ -154,7 +141,7 @@
               <h5>Visão geral de Vendas</h5>
               <p><span>(+5) a mais</span> de 2023</p>
               <div class="grafico">
-                <canvas id="teste" width="700" height="250"></canvas>
+                <canvas id="grafico" class="w-100"></canvas>
               </div>
             </div>
           </section>

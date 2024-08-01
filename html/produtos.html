@@ -16,127 +16,115 @@
   </head>
   <body>
     <!-- Container principal -->
-    <div class="container-fluid">
+    <div class="container-fluid w-100">
       <div class="row p-4">
-        <!-- Menu lateral -->
-        <aside class="col-md-3 col-lg-2 p-0 rounded-2">
-          <nav>
-            <div class="sidebar">
-              <!-- Logo -->
-              <div class="logo m-3 text-center">
-                <h1>NextVendas</h1>
-              </div>
-              <!-- Itens do Menu -->
-              <ul class="nav flex-column m-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="../index.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="home"
-                    ></ion-icon>
-                    Dashboard
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center active"
-                    href="./servidores.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="stats-chart"
-                    ></ion-icon>
-                    Servidores
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="./historico.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="receipt"
-                    ></ion-icon>
-                    Histórico
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="./layouts.html"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="bag-handle"
-                    ></ion-icon>
-                    Layouts
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#pagamento"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="qr-code-sharp"
-                    ></ion-icon>
-                    Pagamento
-                  </a>
-                </li>
-                <h3 class="my-3">Chaves</h3>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#perfil"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="person"
-                    ></ion-icon>
-                    Perfil
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="#sair"
-                  >
-                    <ion-icon
-                      class="icon me-2 rounded-2 p-2"
-                      name="power"
-                    ></ion-icon>
-                    Sair
-                  </a>
-                </li>
-              </ul>
+          <!-- Navbar for mobile view -->
+        <nav class="navbar navbar-dark d-xl-none">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">NextVendas</a>
+            <ul class="d-flex align-items-center m-0 p-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                  <ion-icon name="home"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/servidores.html">
+                  <ion-icon name="stats-chart"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./html/historico.html">
+                  <ion-icon name="receipt"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/layouts.html">
+                  <ion-icon name="bag-handle"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pagamento">
+                  <ion-icon name="qr-code-sharp"></ion-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#perfil">
+                  <ion-icon name="person-circle"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Sidebar -->
+        <aside class="col-xl-2 p-0 rounded-2">
+          <nav class="sidebar collapse d-xl-block" id="sidebarMenu">
+            <!-- Logo -->
+            <div class="logo m-3 text-center">
+              <h1>NextVendas</h1>
             </div>
+            <!-- Menu Items -->
+            <ul class="nav flex-column m-xl-3">
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../index.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="home"></ion-icon>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center active" href="../html/servidores.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="stats-chart"></ion-icon>
+                  Servidores
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../html/historico.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="receipt"></ion-icon>
+                  Histórico
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="../html/layouts.html">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="bag-handle"></ion-icon>
+                  Layouts
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="#pagamento">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="qr-code-sharp"></ion-icon>
+                  Pagamento
+                </a>
+              </li>
+              <li class="nav-item mb-1">
+                <a class="nav-link d-flex align-items-center" href="#perfil">
+                  <ion-icon class="icon me-2 rounded-2 p-2" name="person"></ion-icon>
+                  Perfil
+                </a>
+              </li>
+            </ul>
           </nav>
         </aside>
 
         <!-- Conteúdo principal -->
-        <main class="col-md-9 col-lg-10">
+        <main class="col-xl-10">
           <!-- Nome do servidor -->
-          <header>
+          <header class="my-3 m-xl-0 ms-xl-4">
             <div class="topo d-flex align-items-center pb-4">
-              <div class="circulo rounded-circle ms-4"></div>
-              <h1 class="ms-4">Servidor 1</h1>
+              <div class="circulo rounded-circle"></div>
+              <h1 class="m-0 ms-4">Servidor 1</h1>
             </div>
             <!-- Botão de voltar -->
             <div>
-              <a class="voltar m-2 d-flex" href="./servidores.html">
-                <ion-icon class="icon px-2" name="arrow-undo"></ion-icon> Voltar
+              <a class="voltar my-2 d-flex align-items-start" href="./servidores.html">
+                <ion-icon class="icon px-xl-2" name="arrow-undo"></ion-icon>
+                <p class="m-0 ms-2">Voltar</p>
               </a>
             </div>
           </header>
 
           <!-- Tabela de produtos -->
           <section>
-            <div class="card ms-4 my-4 p-4">
+            <div class="card my-3 ms-xl-4 p-4">
               <div id="card-container" class="">
                 <div class="col">
                   <h1 class="card-title text-center">Shop Name</h1>
@@ -164,25 +152,25 @@
               >
                 <button
                   id="button"
-                  onclick="openForm('add')"
-                  class="btn rounded-2 p-2 px-4 my-2 mx-4 d-flex justify-content-center"
+                  onclick="openForm('produtos', 'add')"
+                  class="btn rounded-2 p-2 my-2 mx-2 mx-xl-4 d-flex justify-content-center"
                 >
                   Adicionar Novo Produto
                 </button>
                 <a
-                  class="btn escolher-layout rounded-2 p-2 px-4 my-2 mx-4 d-flex justify-content-center"
+                  class="btn escolher-layout rounded-2 p-2 my-2 mx-2 mx-xl-4 d-flex justify-content-center"
                   href="./layouts.html"
                   >Escolher Outro Layout</a
                 >
               </div>
 
               <!-- Formulário de edição/adicionar produto -->
-              <div class="discord-card p-3 rounded-2" id="discord-card">
+              <div class="discord-card p-2 p-lg-3 rounded-2" id="discord-card">
                 <div class="row">
-                  <h2 class="col-10">Informações do produto:</h2>
+                  <h2 class="col-9 col-lg-10 m-0">Informações do produto:</h2>
                   <button
-                    class="col btn p-2 d-flex align-content-center justify-content-center"
-                    onclick="closeForm()"
+                    class="col-3 col-lg-2 btn p-1 p-lg-2 d-flex align-content-center justify-content-center"
+                    onclick="closeForm('produto')"
                   >
                     <ion-icon
                       id="close-form"
@@ -195,7 +183,7 @@
                       <b>📌 | Nome:</b>
                       <input
                         type="text"
-                        class="my-2 p-2 rounded-2"
+                        class="my-1 my-lg-2 p-2 rounded-2"
                         id="card-nome"
                         placeholder="Nome"
                       />
@@ -204,7 +192,7 @@
                       <b>📝 | Descrição:</b>
                       <input
                         type="text"
-                        class="my-2 p-2 rounded-2"
+                        class="my-1 my-lg-2 p-2 rounded-2"
                         id="card-descricao"
                         placeholder="Descrição"
                       />
@@ -213,7 +201,7 @@
                       <b>📦 | Estoque:</b>
                       <input
                         type="number"
-                        class="my-2 p-2 rounded-2"
+                        class="my-1 my-lg-2 p-2 rounded-2"
                         id="card-estoque"
                         placeholder="Estoque"
                       />
@@ -222,7 +210,7 @@
                       <b>💸 | Preço:</b>
                       <input
                         type="text"
-                        class="my-2 p-2 rounded-2"
+                        class="my-1 my-lg-2 p-2 rounded-2"
                         id="card-preco"
                         placeholder="Preço"
                       />
@@ -230,15 +218,15 @@
                     <p id="codigo"></p>
                   </div>
                   <!-- Container da imagem do produto -->
-                  <div class="image-container col-6 p-2">
+                  <div class="image-container col-6 p-1 p-lg-2">
                     <img
-                      class="card-image p-4 rounded-2"
+                      class="card-image p-3 p-lg-4 rounded-2"
                       id="card-image"
                       src=""
                       alt="Imagem do produto"
                     />
                     <button
-                      class="change-image-button py-2 px-3 rounded-1"
+                      class="change-image-button py-1 px-2 py-lg-2 px-lg-3 rounded-1"
                       onclick="document.getElementById('fileInput').click()"
                     >
                       Trocar Imagem
@@ -248,16 +236,168 @@
                       id="fileInput"
                       style="display: none"
                       accept="image/*"
-                      onchange="changeImage(event)"
+                      onchange="changeImage(event, 'card-image')"
                     />
                   </div>
                 </div>
                 <div id="error-message" class="error-message mt-1"></div>
-                <button class="save-btn p-2 rounded-3" onclick="saveProduct()">
+                <button class="save-btn p-1 p-lg-2 rounded-3 w-100" onclick="saveData('produto')">
                   Salvar
                 </button>
               </div>
             </div>
+          </section>
+
+          <section class="cards">
+            <div class="row">
+              <div id="notif-vendas" class="col-md-6">
+                <div id="card-notif-vendas" class="card p-3 ms-xl-4">
+                  <h1 id="titulo-notif-vendas" class="card-title text-center">
+                    Canal de Notificação de Vendas
+                  </h1>
+                  <p id="texto-notif-vendas" class="card-text text-center">
+                    Todas as notificações de vendas realizadas serão enviadas para este canal.
+                  </p>
+                  <button
+                    id="botao-notif-vendas"
+                    onclick="openForm('config-canal')"
+                    class="btn rounded-2 p-2 my-2 mx-4 text-center"
+                  >
+                    Configurar Canal
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="form-notif-vendas p-2 p-lg-3 rounded-2"
+                id="form-notif-vendas"
+              >
+                <div class="row">
+                  <h2 class="col-9 col-lg-10">Canal de notificação de vendas:</h2>
+                  <button
+                    class="col-3 col-lg-2 btn p-1 p-lg-2 d-flex align-content-center justify-content-center"
+                    onclick="closeForm('config-canal')"
+                  >
+                    <ion-icon
+                      id="close-form"
+                      name="close-circle-sharp"
+                    ></ion-icon>
+                  </button>
+                  <div class="col-6 flex-column">
+                    <input type="hidden" id="product-index" />
+                    <p>
+                      <b>📌 | Escolha o canal:</b>
+                      <select
+                        name="canal"
+                        id="vendas-canal"
+                        class="my-1 my-lg-2 p-2 rounded-2"
+                      >
+                        <option value="geral1">geral</option>
+                        <option value="geral2">geral2</option>
+                        <option value="geral3">geral3</option>
+                      </select>
+                    </p>
+                    <p>
+                      <b>📝 | Descrição:</b>
+                      <input
+                        type="text"
+                        class="my-1 my-lg-2 p-2 rounded-2"
+                        id="vendas-descricao"
+                        placeholder="Descrição"
+                      />
+                    </p>
+                  </div>
+                  <div class="image-container col-6 p-1 p-lg-2">
+                    <img
+                      class="card-image p-3 p-lg-4 rounded-2"
+                      id="vendas-image"
+                      src=""
+                      alt="Imagem do produto"
+                    />
+                    <button
+                      class="change-image-button py-1 px-2 py-lg-2 px-lg-3 rounded-1"
+                      onclick="document.getElementById('vendas-fileInput').click()"
+                    >
+                      Trocar Imagem
+                    </button>
+                    <input
+                      type="file"
+                      id="vendas-fileInput"
+                      style="display: none"
+                      accept="image/*"
+                      onchange="changeImage(event, 'vendas-image')"
+                    />
+                  </div>
+                </div>
+                <div id="vendas-error-message" class="error-message mt-1"></div>
+                <button class="save-btn p-1 p-lg-2 rounded-3 w-100" onclick="saveData('canal')">
+                  Salvar
+                </button>
+              </div>
+
+              <div class="col-md-6">
+                <div id="card-disabl-loja" class="card p-3 mt-3 m-md-0">
+                  <h1 id="titulo-disabl-loja" class="card-title text-center">
+                    Desativar loja
+                  </h1>
+                  <p id="texto-disabl-loja" class="card-text text-center">
+                    Ao desativar a loja, não será possível realizar compras até
+                    que ela seja habilitada novamente.
+                  </p>
+                  <button
+                    id="botao-disabl-loja"
+                    onclick="loja('disable')"
+                    class="btn rounded-2 p-2 px-4 my-2 mx-4 text-center"
+                  >
+                    Desativar loja
+                  </button>
+
+                  <button
+                    id="botao-enabl-loja"
+                    onclick="loja('enable')"
+                    class="btn rounded-2 p-2 px-4 my-2 mx-4 text-center"
+                  >
+                    Ativar loja
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="historico-vendas" class="card my-3 p-3 ms-xl-4">
+            <h2 id="titulo-historico-vendas" class="card-title text-center">
+              Histórico de Vendas
+            </h2>
+            <div class="table-responsive p-2">
+              <table id="tabela-historico-vendas" class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome do Cliente</th>
+                    <th scope="col">Servidor</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Id do Pedido</th>
+                  </tr>
+                </thead>
+                <tbody id="vendas"></tbody>
+              </table>
+            </div>
+
+            <!-- Paginação -->
+            <section class="paginacao">
+              <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <button class="page-link" id="prev-page">Anterior</button>
+                  </li>
+                  <li class="page-item">
+                    <span class="page-link" id="page-info"></span>
+                  </li>
+                  <li class="page-item">
+                    <button class="page-link" id="next-page">Próxima</button>
+                  </li>
+                </ul>
+              </nav>
+            </section>
           </section>
         </main>
       </div>
