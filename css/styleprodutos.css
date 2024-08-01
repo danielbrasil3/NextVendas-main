@@ -538,8 +538,24 @@ td .delete-icon {
     display: none;
   }
 
+  .discord-card h2 {
+    font-size: 2rem;
+  }
+
+  .discord-card p {
+    font-size: .75rem;
+  }
+
+  .discord-card .save-btn {
+    font-size: 1rem;
+  }
+
+  .discord-card input{
+    font-size: .75rem;
+  }
+  
   #form-notif-vendas p {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
 
   #form-notif-vendas h2 {
@@ -551,10 +567,10 @@ td .delete-icon {
   }
 
   #form-notif-vendas input {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
   #form-notif-vendas select {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
   .voltar .icon {
     width: 32px;

@@ -284,4 +284,20 @@ td .delete-icon {
   .navbar {
     display: none;
   }
+
+  .discord-card h2 {
+    font-size: 2rem;
+  }
+
+  .discord-card p {
+    font-size: .75rem;
+  }
+
+  .discord-card .save-btn {
+    font-size: 1rem;
+  }
+
+  .discord-card input{
+    font-size: .75rem;
+  }
 }
