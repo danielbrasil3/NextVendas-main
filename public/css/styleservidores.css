@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: #0B1437;
+    color: white;
+}
+aside{
+    background-color: #111C44;
+}
+.sidebar .logo h1{
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+}
+.sidebar ul li{
+    color: #1B254B;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar ul li a .icon{
+    width: 15px;
+    height: 15px;
+    background-color: #1B254B;
+    color: #3182CE;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+.nav-link{
+    color: white;
+    transition: background-color 0.4s ease;
+}
+.nav-link.active {
+    background-color: #1B254B; /* Cor de fundo diferente para o link ativo */
+    color: white; /* Cor do texto para o link ativo */
+}
+.nav-link.active .icon {
+    background-color: #3182CE;
+    color: white; /* Ajuste a cor do ícone para o link ativo */
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: #D9D9D9;
+    transition: box-shadow 0.3s ease;
+}
+.circulo:hover{
+    box-shadow: 0px 0px 20px 0px #000;
+}
+.topo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card{
+    background-color: #111C44;
+    color: white;
+}
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#button{
+    background-color: #1FC73A;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color, box-shadow 0.3s ease;
+}
+
+#button:hover{
+    background-color: #20d63e;
+    box-shadow: 0px 0px 10px 0px #178d2b;
+}
+.no-link {
+    color: inherit; 
+    text-decoration: none;
+}
+
+.no-link:hover,
+.no-link:focus {
+    color: inherit;
+    text-decoration: none; 
+}
+.circulo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+  }
+  .avatar-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
