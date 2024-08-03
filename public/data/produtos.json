@@ -1,0 +1,43 @@
+{
+    "Banco-de-dados": {
+        "1": {
+            "shop-name":"Loja A",
+            "produtos": [
+                {"cod": 1, "nome": "Produto B1", "preco": "R$15,99", "qtde": 5},
+                {"cod": 2, "nome": "Produto B2", "preco": "R$25,99", "qtde": 7},
+                {"cod": 3, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 4, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 5, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 6, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10}
+            ]
+        },
+        "2": {
+            "shop-name":"Loja B",
+            "produtos": [
+                {"cod": 1, "nome": "Produto B1", "preco": "R$15,99", "qtde": 5},
+                {"cod": 2, "nome": "Produto B2", "preco": "R$25,99", "qtde": 7},
+                {"cod": 3, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 4, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 5, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 6, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 7, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10},
+                {"cod": 8, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10}
+            ]
+        },
+        "3": {
+            "shop-name":"Loja C",
+            "produtos": [
+                {"cod": 1, "nome": "Produto B1", "preco": "R$15,99", "qtde": 5},
+                {"cod": 2, "nome": "Produto B2", "preco": "R$25,99", "qtde": 7},
+                {"cod": 3, "nome": "Produto B3", "preco": "R$35,99", "qtde": 10}
+            ]
+        }
+    },
+    "Novo-layout": {
+        "shop-name": "Shop Name",
+        "produtos": [
+            {"cod": 1, "nome": "Produto 1", "preco": "R$0,00", "qtde": 0},
+            {"cod": 1, "nome": "Produto 1", "preco": "R$0,00", "qtde": 0}
+        ]
+    }
+}
